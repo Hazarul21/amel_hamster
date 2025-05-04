@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8F0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #FFB6C1;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+    animation: fadeInDown 1s ease-out;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #FFF0F5;
+    animation: fadeIn 2s ease-in;
+}
+
+.about img {
+    max-width: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+.description {
+    max-width: 500px;
+}
+
+.favorites, .fun-facts {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.favorites ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.favorites li {
+    background-color: #FAF0DC;
+    padding: 10px;
+    margin: 8px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.favorites li:hover {
+    transform: scale(1.05);
+    background-color: #FFEFD5;
+}
+
+.favorites li.clicked {
+    background-color: #FFDAB9 !important;
+    font-weight: bold;
+    transform: scale(1.08);
+}
+
+.fun-facts .facts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fact {
+    background-color: #E0F7FA;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.fact:hover {
+    transform: translateY(-5px);
+    background-color: #B2EBF2;
+}
+
+.fact.clicked {
+    background-color: #A5F2EF !important;
+    transform: scale(1.05);
+}
+
+.fact h3 {
+    color: #00796B;
+}
+
+footer {
+    background-color: #FFB6C1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    margin-top: 40px;
+    animation: fadeInUp 2s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

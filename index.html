@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenalan dengan Amel si Hamster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kenalan dengan Amel si Hamster</h1>
+        <p>Hamster kecil yang lucu, aktif, dan selalu ceria!</p>
+    </header>
+
+    <section class="about">
+        <img src="Foto amel.jpg" alt="Amel si Hamster">
+        <div class="description">
+            <h2>Tentang Amel</h2>
+            <p>Amel adalah hamster betina mungil berwarna coklat keemasan. Dia sangat aktif dan suka berlarian di dalam roda mainannya. Setiap pagi, Amel bangun dengan semangat, menyambut hari dengan tingkah polahnya yang menggemaskan.</p>
+            <p>Amel juga suka digendong dan dielus lembut. Ia sangat bersahabat dan cepat akrab dengan orang baru.</p>
+        </div>
+    </section>
+
+    <section class="favorites">
+        <h2>Makanan Favorit Amel</h2>
+        <ul>
+            <li>Biji bunga matahari</li>
+            <li>Wortel segar</li>
+            <li>Kacang almond</li>
+            <li>Jagung manis</li>
+            <li>Apel (tanpa biji)</li>
+        </ul>
+    </section>
+
+    <section class="fun-facts">
+        <h2>Fakta Unik tentang Amel</h2>
+        <div class="facts">
+            <div class="fact">
+                <h3>✨ Aktif di Malam Hari</h3>
+                <p>Amel lebih banyak beraktivitas saat malam. Ia sering terlihat berlari-lari di roda saat semua orang tertidur.</p>
+            </div>
+            <div class="fact">
+                <h3>☕ Punya Tempat Sembunyi Favorit</h3>
+                <p>Dia suka menyimpan makanannya di sudut kandang tersembunyi dan kembali mencarinya nanti.</p>
+            </div>
+            <div class="fact">
+                <h3>🤍 Pintar dan Peka</h3>
+                <p>Amel tahu saat pemiliknya datang, dan langsung keluar dari sarangnya untuk menyapa!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Dibuat dengan ❤️ papa amel Amel</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.favorites li').forEach(item => {
+          item.addEventListener('click', () => {
+            item.classList.toggle('clicked');
+          });
+        });
+      
+        document.querySelectorAll('.fact').forEach(fact => {
+          fact.addEventListener('click', () => {
+            fact.classList.toggle('clicked');
+          });
+        });
+      </script>
+      
+
+      <script>
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            alert("Halo! Namaku Amel, hamster kecil yang lucu 💕");
+          }, 1000);
+        });
+      </script>
+      
+</body>
+</html>
